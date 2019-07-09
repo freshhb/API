@@ -1,0 +1,22 @@
+
+
+#https://python-twitter.readthedocs.io/en/latest/twitter.html#module-twitter.api
+
+
+import twitter
+
+CONSUMER_KEY = "QVJ1j1VyfvHCouUbEs15udRkt"
+CONSUMER_SECRET = "wOVQzRUZ2sPdsrdkUB60QEc0IJBCPep8jGtMw8QQeVJt9n3M5L"
+ACCESS_TOKEN = "18075111-4X1VpMLaMOeY85gMDmJ7UdHqpRZMHirVsPvv6kMjc"
+ACCESS_TOKEN_SECRET = "TS41sovwkuDllSf9MCvSYd8YCOBfMX9Jbzp6moCiF7rvQ"
+
+api = twitter.Api(consumer_key=CONSUMER_KEY,
+                  consumer_secret=CONSUMER_SECRET,
+                  access_token_key=ACCESS_TOKEN,
+                  access_token_secret=ACCESS_TOKEN_SECRET)
+
+
+status = 'first tweet'
+print(api.PostUpdates(status))
+
+
